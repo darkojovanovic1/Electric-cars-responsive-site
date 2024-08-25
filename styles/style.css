@@ -1,12 +1,7 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(219, 69%, 56%);
   --first-color-alt: hsl(219, 69%, 52%);
   --title-color: hsl(219, 8%, 95%);
@@ -15,9 +10,6 @@
   --white-color: #fff;
   --body-color: hsl(219, 4%, 4%);
   --container-color: hsl(219, 4%, 7%);
-
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Exo', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -25,16 +17,11 @@
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
-
-  /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
-
-  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
-
 @media screen and (min-width: 968px) {
   :root {
     --h1-font-size: 2.25rem;
@@ -46,7 +33,6 @@
   }
 }
 
-/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -84,7 +70,6 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
   margin-right: 1.5rem;
@@ -132,7 +117,6 @@ img {
   filter: blur(64px);
 }
 
-/*=============== HEADER & NAV ===============*/
 .header {
   width: 100%;
   background-color: transparent;
@@ -219,12 +203,10 @@ img {
   }
 }
 
-/* Show menu */
 .show-menu {
   right: 0;
 }
 
-/* Change background header */
 .scroll-header {
   border-radius: 0 0 1rem 1rem;
   background-color: var(--body-color);
@@ -232,12 +214,10 @@ img {
   transition: .3s;
 }
 
-/* Active link */
 .active-link {
   color: var(--first-color);
 }
 
-/*=============== HOME ===============*/
 .home {
   position: relative;
   overflow: hidden;
@@ -358,7 +338,6 @@ img {
   bottom: 3rem;
 }
 
-/* Button animate */
 @keyframes button {
   0% {
     box-shadow: 0 0 12px hsl(158, 98%, 43%);
@@ -369,7 +348,6 @@ img {
   }
 }
 
-/*=============== BUTTON ===============*/
 .button {
   display: inline-flex;
   background-color: var(--first-color);
@@ -384,7 +362,6 @@ img {
   background-color: var(--first-color-alt);
 }
 
-/*=============== ABOUT ===============*/
 .about-container {
   row-gap: 6rem;
 }
@@ -428,7 +405,6 @@ img {
   margin-bottom: 2rem;
 }
 
-/*=============== POPULAR ===============*/
 .popular-container {
   padding-top: 1rem;
 }
@@ -515,11 +491,9 @@ img {
   transform: translateY(-.25rem);
 }
 
-/* Swiper class */
 
 
 
-/*=============== FEATURES ===============*/
 .features {
   overflow: hidden;
   position: relative;
@@ -589,7 +563,6 @@ img {
   transform: rotate(-22deg);
 }
 
-/*=============== FEATURED ===============*/
 .featured-container {
   padding-top: 1rem;
 }
@@ -701,7 +674,6 @@ img {
   transform: translateX(-.25rem);
 }
 
-/* Active link featured */
 .active-featured {
   background-color: var(--first-color);
 }
@@ -711,7 +683,6 @@ img {
   opacity: 1;
 }
 
-/*=============== OFFER ===============*/
 .offer {
   position: relative;
 }
@@ -756,7 +727,6 @@ img {
 }
 
 
-/*=============== LOGOS ===============*/
 .logos-img {
   width: 40px;
   opacity: .4;
@@ -775,7 +745,6 @@ img {
   opacity: 1;
 }
 
-/*=============== FOOTER ===============*/
 .footer {
   position: relative;
   overflow: hidden;
@@ -862,7 +831,6 @@ img {
   color: var(--text-color-light);
 }
 
-/*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: .6rem;
   background-color: hsl(219, 4%, 16%);
@@ -878,7 +846,6 @@ img {
   background-color: hsl(219, 4%, 32%);
 }
 
-/* For small devices */
 @media screen and (max-width:320px) {
   .container {
     margin-left: 1rem;
@@ -906,7 +873,6 @@ img {
   }
 }
 
-/* For medium devices */
 @media screen and (min-width: 576px) {
   .about-group {
     width: 350px;
@@ -980,170 +946,206 @@ img {
     font-size: 1.5rem;
   }
 
-  .about-container{
+  .about-container {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .logos-container{
+  .logos-container {
     gap: 4rem 8rem;
   }
 
-  .footer-container{
+  .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* For large devices */
 
-@media screen and (min-width: 1040px){
-  .container{
+@media screen and (min-width: 1040px) {
+  .container {
     margin-left: auto;
     margin-right: auto;
   }
+
   .nav-link {
     font-size: var(--h3-font-size);
   }
-  .shape-big{
+
+  .shape-big {
     width: 500px;
     height: 500px;
   }
-  .shape-small{
+
+  .shape-small {
     width: 400px;
     height: 400px;
   }
-  .home-container{
+
+  .home-container {
     padding-top: 2rem;
   }
-  .home-img{
+
+  .home-img {
     width: 380px;
   }
-  .home-card{
+
+  .home-card {
     column-gap: 7rem;
   }
-  .home-card-icon{
+
+  .home-card-icon {
     font-size: 1.25rem;
     margin-bottom: 1rem;
   }
-  .about-container{
+
+  .about-container {
     column-gap: 6rem;
     align-items: center;
   }
+
   .about-group,
-  .about-img{
+  .about-img {
     width: 480px;
   }
-  .about-card{
+
+  .about-card {
     width: 198px;
     padding: 1rem 1.25rem;
   }
-  .about-description{
+
+  .about-description {
     padding-right: 4rem;
     margin-bottom: 3rem;
   }
-  .popular-container{
+
+  .popular-container {
     width: 875px;
     padding-top: 3rem;
   }
-  .popular-card{
+
+  .popular-card {
     width: 258px;
     border-radius: 1.25rem;
     margin-bottom: 5rem;
   }
-  .popular-img{
+
+  .popular-img {
     width: 180px;
     margin: .75rem 0 1.25rem 2rem;
   }
 
-  .features-container{
+  .features-container {
     padding: 2rem 0 3rem;
   }
-  .features-img{
+
+  .features-img {
     width: 200px;
   }
-  .features-card{
+
+  .features-card {
     width: 127px;
     padding: .75rem 2.5rem;
   }
-  .features-card-1{
+
+  .features-card-1 {
     left: -1rem;
   }
-  .features-card-2{
+
+  .features-card-2 {
     right: -2.5rem;
   }
-  .features-card-3{
+
+  .features-card-3 {
     bottom: 7rem;
     left: -1rem;
   }
 
-  .features-map{
+  .features-map {
     width: 650px;
     top: 11rem;
   }
-  .featured-container{
+
+  .featured-container {
     padding-bottom: 2.5rem;
   }
-  .featured-filters{
+
+  .featured-filters {
     column-gap: 2rem;
     margin-bottom: 4.5rem;
   }
-  .featured-item{
+
+  .featured-item {
     width: 52px;
     height: 52px;
   }
-  .featured-item img{
+
+  .featured-item img {
     width: 2rem;
   }
-  .featured-content{
+
+  .featured-content {
     grid-template-columns: repeat(3, 248px);
     gap: 4rem;
   }
 
-  .offer-container{
+  .offer-container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 5rem;
     align-items: center;
     padding-bottom: 2rem;
   }
+
   .offer-data,
-  .offer-title{
+  .offer-title {
     text-align: center;
   }
-  .offer-data{
+
+  .offer-data {
     margin-bottom: 0;
   }
-  .offer-description{
+
+  .offer-description {
     padding-right: 6rem;
   }
-  .offer-img{
+
+  .offer-img {
     width: 450px;
   }
-  .logos-container{
+
+  .logos-container {
     grid-template-columns: repeat(6, max-content);
   }
-  .logos-img{
+
+  .logos-img {
     width: 50px;
   }
-  .footer-container{
+
+  .footer-container {
     grid-template-columns: repeat(4, max-content);
     justify-content: space-between;
     padding: 3rem;
   }
-  .footer-logo{
+
+  .footer-logo {
     column-gap: .5rem;
   }
-  .footer-logo i{
+
+  .footer-logo i {
     font-size: 2rem;
   }
-  .footer-title{
+
+  .footer-title {
     margin-bottom: 1.5rem;
   }
-  .footer-links{
+
+  .footer-links {
     row-gap: .75rem;
   }
-  .footer-social-link{
+
+  .footer-social-link {
     font-size: 1.5rem;
   }
-  .footer-copy{
+
+  .footer-copy {
     margin-top: 8rem;
   }
 }

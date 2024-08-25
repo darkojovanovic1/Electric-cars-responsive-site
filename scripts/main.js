@@ -1,44 +1,28 @@
-/*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
-
-/* Menu show */
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
-
-/* Menu hidden */
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
-
-/*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav-link')
-
 const linkAction = () => {
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
-
-
-/*=============== CHANGE BACKGROUND HEADER ===============*/
 const scrollHeader = () => {
     const header = document.getElementById('header')
-    // Add a class if the bottom offset is greater than 50 of the viewport
     this.scrollY >= 50 ? header.classList.add('scroll-header')
         : header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
-
-
-/*=============== POPULAR SWIPER ===============*/
 document.addEventListener('DOMContentLoaded', function () {
     let swiperPopular = new Swiper(".popular-container", {
         loop: true,
@@ -59,8 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-/*=============== MIXITUP FILTER FEATURED ===============*/
 let mixerFeatured = mixitup('.featured-content', {
     selectors: {
         target: '.featured-card'
@@ -69,29 +51,18 @@ let mixerFeatured = mixitup('.featured-content', {
         duration: 300
     }
 });
-
-/* Link active featured */
 const linkFeatured = document.querySelectorAll('.featured-item')
-
 function activeFeatured() {
     linkFeatured.forEach(l => l.classList.remove('active-featured'))
     this.classList.add('active-featured')
 }
-
 linkFeatured.forEach(l => l.addEventListener('click', activeFeatured))
-
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2500,
     delay: 400
 })
-
 sr.reveal(`.home-title, .popular-container, .features-img, .features-filters`)
 sr.reveal(`.home-subtitle`, {delay: 500})
 sr.reveal(`.home-elec`, {delay: 600})
