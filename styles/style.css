@@ -682,6 +682,44 @@ img {
   opacity: 1;
 }
 /*=============== OFFER ===============*/
+.offer{
+  position: relative;
+}
+.offer-container{
+  grid-template-rows: max-content 224px;
+}
+.offer-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.offer-data,
+.offer-img{
+  position: relative;
+}
+.offer-data{
+  text-align: center;
+}
+
+.offer-title{
+  margin-bottom: 2rem;
+}
+
+.offer-description{
+  margin-bottom: 3rem;
+}
+
+.offer-img{
+  position: absolute;
+  max-width: initial;
+  width: 400px;
+  bottom: 2rem;
+  right: -5.5rem;
+}
 
 
 /*=============== LOGOS ===============*/

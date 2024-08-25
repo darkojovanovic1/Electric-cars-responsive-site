@@ -1,36 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-========== OFFER ==========
-.section__title
-Do You Want To Receive <br> Special Offers?
-
-.offer__description
-Be the first to receive all the information about our 
-products and new cars by email by subscribing to our 
-mailing list.
-
-.button
-Subscribe Now
-
 ========== FOOTER ==========
 .footer__title
 Elecar
