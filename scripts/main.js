@@ -39,7 +39,7 @@ window.addEventListener('scroll', scrollHeader)
 
 
 /*=============== POPULAR SWIPER ===============*/
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let swiperPopular = new Swiper(".popular-container", {
         loop: true,
         spaceBetween: 24,
@@ -73,13 +73,12 @@ let mixerFeatured = mixitup('.featured-content', {
 /* Link active featured */
 const linkFeatured = document.querySelectorAll('.featured-item')
 
-function activeFeatured(){
-    linkFeatured.forEach(l=> l.classList.remove('active-featured'))
+function activeFeatured() {
+    linkFeatured.forEach(l => l.classList.remove('active-featured'))
     this.classList.add('active-featured')
 }
 
-linkFeatured.forEach(l=> l.addEventListener('click', activeFeatured))
-/*=============== SHOW SCROLL UP ===============*/
+linkFeatured.forEach(l => l.addEventListener('click', activeFeatured))
 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
