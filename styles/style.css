@@ -446,48 +446,55 @@ img {
   top: -2.5rem;
   left: -2.5rem;
 }
+
 .popular-title,
 .popular-subtitle,
-.popular-img{
+.popular-img {
   position: relative;
 }
-.popular-title{
+
+.popular-title {
   font-size: var(--h2-font-size);
   margin-bottom: .25rem;
 }
-.popular-subtitle{
+
+.popular-subtitle {
   font-size: var(--normal-font-size);
   color: var(--text-color);
   font-weight: 400;
 }
-.popular-img{
+
+.popular-img {
   width: 160px;
   margin: .75rem 0 1.25rem 1.5rem;
   transition: .3s;
 }
-.popular-data{
+
+.popular-data {
   display: grid;
   grid-template-columns: repeat(2, max-content);
-  gap:.5rem 1.25rem;
+  gap: .5rem 1.25rem;
   margin-bottom: 2rem;
 }
 
-.popular-data-group{
+.popular-data-group {
   display: inline;
   align-items: center;
   column-gap: .5rem;
   font-size: var(--smaller-font-size);
   color: var(--white-color);
 }
-.popular-data i{
+
+.popular-data i {
   font-size: 1rem;
 }
 
 
-.popular-price{
+.popular-price {
   font-size: var(--h3-font-size);
 }
-.popular-button{
+
+.popular-button {
   border: none;
   outline: none;
   padding: .75rem 1rem;
@@ -497,37 +504,44 @@ img {
   border-radius: 1rem 0 1rem 0;
   cursor: pointer;
 }
-.popular-button i{
+
+.popular-button i {
   font-size: 1.25rem;
 }
-.popular-card:hover .popular-img{
+
+.popular-card:hover .popular-img {
   transform: translateY(-.25rem);
 }
+
 /* Swiper class */
 
 
 
 /*=============== FEATURES ===============*/
-.features{
+.features {
   overflow: hidden;
   position: relative;
 }
-.features-container{
+
+.features-container {
   padding-top: 2rem;
   grid-template-columns: 285px;
   justify-content: center;
 }
-.features-group{
+
+.features-group {
   display: grid;
   position: relative;
   z-index: 10;
 }
-.features-img{
+
+.features-img {
   width: 150px;
   justify-self: center;
   z-index: var(--z-tooltip);
 }
-.features-card{
+
+.features-card {
   width: 112px;
   background-color: hsl(0, 0%, 100%, .1);
   backdrop-filter: blur(16px);
@@ -539,26 +553,32 @@ img {
   z-index: var(--z-tooltip);
 
 }
-.features-card-1{
+
+.features-card-1 {
   top: 4rem;
   left: 1.5rem;
 }
-.features-card-2{
+
+.features-card-2 {
   top: 8rem;
   right: 1rem;
 }
-.features-card-3{
+
+.features-card-3 {
   left: 1.5rem;
   bottom: 2rem;
 }
-.features-card-title{
+
+.features-card-title {
   font-size: var(--h3-font-size);
   margin-bottom: .25rem;
 }
-.features-card-description{
+
+.features-card-description {
   font-size: var(--smaller-font-size);
 }
-.features-map{
+
+.features-map {
   max-width: initial;
   width: 600px;
   position: absolute;
@@ -566,19 +586,21 @@ img {
   margin: auto;
   transform: rotate(-22deg);
 }
+
 /*=============== FEATURED ===============*/
-.featured-container{
+.featured-container {
   padding-top: 1rem;
 }
 
-.featured-filters{
+.featured-filters {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   column-gap: 1rem;
   margin-bottom: 3.5rem;
 }
-.featured-item{
+
+.featured-item {
   width: 48px;
   height: 48px;
   border: none;
@@ -591,36 +613,40 @@ img {
   cursor: pointer;
   transition: .3s;
 }
-.featured-item img{
+
+.featured-item img {
   width: 1.5rem;
 }
+
 .featured-item span,
-.featured-item img{
+.featured-item img {
   opacity: .3;
   transition: .3s;
 }
-.featured-item:hover{
+
+.featured-item:hover {
   background-color: var(--first-color);
 }
+
 .featured-item:hover span,
-.featured-item:hover img{
+.featured-item:hover img {
   opacity: 1;
 }
 
-.featured-content{
+.featured-content {
   grid-template-columns: 228px;
   row-gap: 2.5rem;
   justify-content: center;
 }
 
-.featured-card{
+.featured-card {
   position: relative;
   background-color: var(--container-color);
   padding: 2rem 1.5rem 1.5rem;
   border-radius: 1rem;
 }
 
-.featured-card .shape-smaller{
+.featured-card .shape-smaller {
   position: absolute;
   inset: 0;
   margin: auto;
@@ -628,33 +654,33 @@ img {
 
 .featured-title,
 .featured-subtitle,
-.featured-img{
+.featured-img {
   position: relative;
 }
 
 
-.featured-title{
+.featured-title {
   font-size: var(--h2-font-size);
   margin-bottom: .25rem;
 }
 
-.featured-subtitle{
+.featured-subtitle {
   font-size: var(--normal-font-size);
   color: var(--text-color);
   font-weight: 400;
 }
 
-.featured-img{
+.featured-img {
   width: 180px;
   margin: 1.5rem 0;
   transition: .3s;
 }
 
-.featured-price{
+.featured-price {
   font-size: var(--h3-font-size);
 }
 
-.featured-button{
+.featured-button {
   border: none;
   outline: none;
   padding: .75rem 1rem;
@@ -665,30 +691,34 @@ img {
   cursor: pointer;
 }
 
-.featured-button i{
+.featured-button i {
   font-size: 1.25rem;
 }
 
-.featured-card:hover .featured-img{
+.featured-card:hover .featured-img {
   transform: translateX(-.25rem);
 }
 
 /* Active link featured */
-.active-featured{
+.active-featured {
   background-color: var(--first-color);
 }
+
 .active-featured span,
-.active-featured img{
+.active-featured img {
   opacity: 1;
 }
+
 /*=============== OFFER ===============*/
-.offer{
+.offer {
   position: relative;
 }
-.offer-container{
+
+.offer-container {
   grid-template-rows: max-content 224px;
 }
-.offer-bg{
+
+.offer-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -697,23 +727,25 @@ img {
   object-fit: cover;
   object-position: center;
 }
+
 .offer-data,
-.offer-img{
+.offer-img {
   position: relative;
 }
-.offer-data{
+
+.offer-data {
   text-align: center;
 }
 
-.offer-title{
+.offer-title {
   margin-bottom: 2rem;
 }
 
-.offer-description{
+.offer-description {
   margin-bottom: 3rem;
 }
 
-.offer-img{
+.offer-img {
   position: absolute;
   max-width: initial;
   width: 400px;
@@ -723,13 +755,13 @@ img {
 
 
 /*=============== LOGOS ===============*/
-.logos-img{
+.logos-img {
   width: 40px;
   opacity: .4;
   transition: .3s;
 }
 
-.logos-container{
+.logos-container {
   grid-template-columns: repeat(3, max-content);
   justify-content: center;
   align-items: center;
@@ -737,12 +769,96 @@ img {
   padding-bottom: 2rem;
 }
 
-.logos-img:hover{
+.logos-img:hover {
   opacity: 1;
 }
+
 /*=============== FOOTER ===============*/
+.footer {
+  position: relative;
+  overflow: hidden;
+}
 
+.footer .shape-big,
+.footer .shape-small {
+  position: absolute;
+}
 
+.footer .shape-big {
+  width: 300px;
+  height: 300px;
+  left: -12rem;
+  top: 6rem;
+}
+
+.footer .shape-small {
+  right: -13rem;
+  bottom: -6rem;
+}
+
+.footer-container {
+  row-gap: 2.5rem;
+  position: relative;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: .25rem;
+  color: var(--title-color);
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: 1.25rem;
+  transition: .3s;
+}
+
+.footer-logo i {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.footer-logo:hover{
+  color: var(--first-color);
+}
+
+.footer-title{
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+}
+
+.footer-link,
+.footer-social-link{
+  color: var(--text-color);
+  transition: .3s;
+}
+
+.footer-link:hover,
+.footer-social-link:hover{
+  color: var(--title-color);
+}
+
+.footer-social{
+  display: flex;
+  column-gap: 1.5rem;
+}
+
+.footer-social-link{
+  font-size: 1.25rem;
+}
+
+.footer-copy{
+  display: block;
+  margin-top: 4.5rem;
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
 /*=============== SCROLL BAR ===============*/
 
 
